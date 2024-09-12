@@ -57,14 +57,11 @@ public class Candidate {
             return false;
         }
         Candidate candidate = (Candidate) object;
-        return id == candidate.id
-                && Objects.equals(name, candidate.name)
-                && Objects.equals(description, candidate.description)
-                && Objects.equals(createDate, candidate.createDate);
+        return id == candidate.id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, description, createDate);
+        return Objects.hash(id);
     }
 }
