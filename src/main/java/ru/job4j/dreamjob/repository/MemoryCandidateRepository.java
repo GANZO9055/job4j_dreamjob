@@ -10,9 +10,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+@Repository
 public class MemoryCandidateRepository implements CandidateRepository {
-
-    private static final MemoryCandidateRepository INSTANCE = new MemoryCandidateRepository();
 
     private int nextId = 1;
 
@@ -33,10 +32,6 @@ public class MemoryCandidateRepository implements CandidateRepository {
                 "Готов предложить свою кандидатуру...",
                 LocalDateTime.of(2024, 8, 6, 17, 43)
         ));
-    }
-
-    public static MemoryCandidateRepository getInstance() {
-        return INSTANCE;
     }
 
     @Override
