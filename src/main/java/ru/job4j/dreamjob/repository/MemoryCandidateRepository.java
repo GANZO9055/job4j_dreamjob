@@ -23,16 +23,20 @@ public class MemoryCandidateRepository implements CandidateRepository {
         save(new Candidate(1,
                 "Дмитрий",
                 "Имею опыт работы в...",
-                LocalDateTime.of(2024, 6, 24, 14, 21)
+                LocalDateTime.of(2024, 6, 24, 14, 21),
+                1
         ));
         save(new Candidate(2,
                 "Андрей",
                 "Знаю необходимые технологии для...",
-                LocalDateTime.of(2024, 7, 16, 15, 28)));
+                LocalDateTime.of(2024, 7, 16, 15, 28),
+                2
+        ));
         save(new Candidate(3,
                 "Георгиий",
                 "Готов предложить свою кандидатуру...",
-                LocalDateTime.of(2024, 8, 6, 17, 43)
+                LocalDateTime.of(2024, 8, 6, 17, 43),
+                3
         ));
     }
 
@@ -55,7 +59,8 @@ public class MemoryCandidateRepository implements CandidateRepository {
                         oldVacancy.getId(),
                         candidate.getName(),
                         candidate.getDescription(),
-                        candidate.getCreateDate()
+                        candidate.getCreateDate(),
+                        candidate.getCityId()
                 )) != null;
     }
 
