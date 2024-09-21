@@ -24,42 +24,48 @@ public class MemoryVacancyRepository implements VacancyRepository {
                 "Вакансия Intern Java Developer",
                 LocalDateTime.of(2024, 6, 24, 14, 21),
                 false,
-                1
+                1,
+                0
         ));
         save(new Vacancy(2,
                 "Junior Java Developer",
                 "Вакансия Junior Java Developer",
                 LocalDateTime.of(2024, 6, 23, 14, 28),
                 true,
-                1
+                1,
+                0
         ));
         save(new Vacancy(3,
                 "Junior+ Java Developer",
                 "Вакансия Junior+ Java Developer",
                 LocalDateTime.of(2024, 6, 23, 14, 43),
                 true,
-                1
+                1,
+                0
         ));
         save(new Vacancy(4,
                 "Middle Java Developer",
                 "Вакансия Middle Java Developer",
                 LocalDateTime.of(2024, 6, 27, 15, 28),
                 true,
-                2
+                2,
+                0
         ));
         save(new Vacancy(5,
                 "Middle+ Java Developer",
                 "Вакансия Middle+ Java Developer",
                 LocalDateTime.of(2024, 6, 28, 14, 31),
                 true,
-                2
+                2,
+                0
         ));
         save(new Vacancy(6,
                 "Senior Java Developer",
                 "Вакансия Senior Java Developer",
                 LocalDateTime.of(2024, 6, 29, 17, 13),
                 true,
-                3
+                3,
+                0
         ));
     }
 
@@ -84,7 +90,8 @@ public class MemoryVacancyRepository implements VacancyRepository {
                         vacancy.getDescription(),
                         vacancy.getCreateDate(),
                         vacancy.getVisible(),
-                        vacancy.getCityId()
+                        vacancy.getCityId(),
+                        vacancy.getFileId()
                 )) != null;
     }
 
