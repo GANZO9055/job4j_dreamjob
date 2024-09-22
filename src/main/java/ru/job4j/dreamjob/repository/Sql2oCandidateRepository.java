@@ -22,7 +22,7 @@ public class Sql2oCandidateRepository implements CandidateRepository {
                       VALUES (:name, :description, :creationDate, :cityId, :fileId)
                       """;
             var query = connection.createQuery(sql, true)
-                    .addParameter("title", candidate.getName())
+                    .addParameter("name", candidate.getName())
                     .addParameter("description", candidate.getDescription())
                     .addParameter("creationDate", candidate.getCreationDate())
                     .addParameter("cityId", candidate.getCityId())
