@@ -38,7 +38,7 @@
                     <td th:text="${vacancy.id}"/>
                     <td><a th:text="${vacancy.title}" th:href="@{/vacancies/{vacancyId}(vacancyId=${vacancy.id})}"></a>
                     </td>
-                    <td th:text="${vacancy.createDate}"/>
+                    <td th:text="${vacancy.creationDate}"/>
                 </tr>
                 </tbody>
             </table>
