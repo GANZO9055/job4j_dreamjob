@@ -3,7 +3,6 @@ package ru.job4j.dreamjob.repository;
 import net.jcip.annotations.ThreadSafe;
 import org.springframework.stereotype.Repository;
 import ru.job4j.dreamjob.model.Candidate;
-import ru.job4j.dreamjob.model.Vacancy;
 
 import java.time.LocalDateTime;
 import java.util.Collection;
@@ -62,7 +61,7 @@ public class MemoryCandidateRepository implements CandidateRepository {
                         oldVacancy.getId(),
                         candidate.getName(),
                         candidate.getDescription(),
-                        candidate.getCreateDate(),
+                        candidate.getCreationDate(),
                         candidate.getCityId(),
                         candidate.getFileId()
                 )) != null;
