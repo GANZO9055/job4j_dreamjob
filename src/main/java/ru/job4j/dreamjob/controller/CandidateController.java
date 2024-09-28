@@ -17,6 +17,11 @@ public class CandidateController {
     private final CandidateService candidateService;
     private final CityService cityService;
 
+    public CandidateController(CandidateService candidateService, CityService cityService) {
+        this.candidateService = candidateService;
+        this.cityService = cityService;
+    }
+
     public CandidateController(CandidateService candidateService, CityService cityService, FileService fileService) {
         this.candidateService = candidateService;
         this.cityService = cityService;
@@ -62,10 +67,10 @@ public class CandidateController {
         try {
             var isUpdated = candidateService.update(candidate, new FileDto(file.getOriginalFilename(), file.getBytes()));
             if (!isUpdated) {
-                model.addAttribute("message", "Вакансия с указанным идентификатором не найдена");
+                model.addAttribute("message", "Резюме с указанным идентификатором не найдена");
                 return "errors/404";
             }
-            return "redirect:/vacancies";
+            return "redirect:/candidates";
         } catch (Exception exception) {
             model.addAttribute("message", exception.getMessage());
             return "errors/404";
