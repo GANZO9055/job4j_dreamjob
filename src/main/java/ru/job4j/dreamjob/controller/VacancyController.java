@@ -17,11 +17,6 @@ public class VacancyController {
     private final VacancyService vacancyService;
     private final CityService cityService;
 
-    public VacancyController(VacancyService vacancyService, CityService cityService) {
-        this.vacancyService = vacancyService;
-        this.cityService = cityService;
-    }
-
     public VacancyController(VacancyService vacancyService, CityService cityService, FileService fileService) {
         this.vacancyService = vacancyService;
         this.cityService = cityService;

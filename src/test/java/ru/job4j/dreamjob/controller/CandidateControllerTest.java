@@ -11,6 +11,7 @@ import ru.job4j.dreamjob.model.Candidate;
 import ru.job4j.dreamjob.model.City;
 import ru.job4j.dreamjob.service.CandidateService;
 import ru.job4j.dreamjob.service.CityService;
+import ru.job4j.dreamjob.service.FileService;
 
 import java.util.List;
 import java.util.Optional;
@@ -30,11 +31,13 @@ class CandidateControllerTest {
 
     private MultipartFile testFile;
 
+    private FileService fileService;
+
     @BeforeEach
     public void initServices() {
         candidateService = mock(CandidateService.class);
         cityService = mock(CityService.class);
-        candidateController = new CandidateController(candidateService, cityService);
+        candidateController = new CandidateController(candidateService, cityService, fileService);
         testFile = new MockMultipartFile("testFile.img", new byte[] {1, 2, 3});
     }
 

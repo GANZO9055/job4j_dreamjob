@@ -17,11 +17,6 @@ public class CandidateController {
     private final CandidateService candidateService;
     private final CityService cityService;
 
-    public CandidateController(CandidateService candidateService, CityService cityService) {
-        this.candidateService = candidateService;
-        this.cityService = cityService;
-    }
-
     public CandidateController(CandidateService candidateService, CityService cityService, FileService fileService) {
         this.candidateService = candidateService;
         this.cityService = cityService;

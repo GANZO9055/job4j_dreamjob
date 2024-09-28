@@ -10,6 +10,7 @@ import ru.job4j.dreamjob.dto.FileDto;
 import ru.job4j.dreamjob.model.City;
 import ru.job4j.dreamjob.model.Vacancy;
 import ru.job4j.dreamjob.service.CityService;
+import ru.job4j.dreamjob.service.FileService;
 import ru.job4j.dreamjob.service.VacancyService;
 
 import java.util.List;
@@ -29,11 +30,13 @@ public class VacancyControllerTest {
 
     private MultipartFile testFile;
 
+    private FileService fileService;
+
     @BeforeEach
     public void initServices() {
         vacancyService = mock(VacancyService.class);
         cityService = mock(CityService.class);
-        vacancyController = new VacancyController(vacancyService, cityService);
+        vacancyController = new VacancyController(vacancyService, cityService, fileService);
         testFile = new MockMultipartFile("testFile.img", new byte[] {1, 2, 3});
     }
 
