@@ -1,4 +1,4 @@
-package ru.job4j.dreamjob.repository;
+package ru.job4j.dreamjob.repository.candidate;
 
 import ru.job4j.dreamjob.model.Candidate;
 import ru.job4j.dreamjob.model.Vacancy;

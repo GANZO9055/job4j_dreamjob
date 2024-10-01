@@ -4,7 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.ui.ConcurrentModel;
 import ru.job4j.dreamjob.model.User;
-import ru.job4j.dreamjob.service.UserService;
+import ru.job4j.dreamjob.service.user.UserService;
 
 import java.util.Optional;
 

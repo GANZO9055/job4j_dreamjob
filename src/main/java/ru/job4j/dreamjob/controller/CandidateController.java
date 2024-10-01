@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import ru.job4j.dreamjob.dto.FileDto;
 import ru.job4j.dreamjob.model.Candidate;
-import ru.job4j.dreamjob.service.CandidateService;
-import ru.job4j.dreamjob.service.CityService;
-import ru.job4j.dreamjob.service.FileService;
+import ru.job4j.dreamjob.service.candidate.CandidateService;
+import ru.job4j.dreamjob.service.city.CityService;
+import ru.job4j.dreamjob.service.file.FileService;
 
 @Controller
 @RequestMapping("/candidates")

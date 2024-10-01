@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import ru.job4j.dreamjob.model.User;
-import ru.job4j.dreamjob.service.UserService;
+import ru.job4j.dreamjob.service.user.UserService;
 
 @Controller
 @RequestMapping("/users")

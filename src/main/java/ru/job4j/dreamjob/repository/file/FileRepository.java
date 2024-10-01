@@ -1,4 +1,4 @@
-package ru.job4j.dreamjob.repository;
+package ru.job4j.dreamjob.repository.file;
 
 import ru.job4j.dreamjob.model.File;
 

@@ -7,7 +7,8 @@ import org.junit.jupiter.api.Test;
 import ru.job4j.dreamjob.configuration.DatasourceConfiguration;
 import ru.job4j.dreamjob.model.Candidate;
 import ru.job4j.dreamjob.model.File;
-import ru.job4j.dreamjob.model.Vacancy;
+import ru.job4j.dreamjob.repository.candidate.Sql2oCandidateRepository;
+import ru.job4j.dreamjob.repository.file.Sql2oFileRepository;
 
 import java.time.temporal.ChronoUnit;
 import java.util.List;

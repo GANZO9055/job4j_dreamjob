@@ -1,4 +1,4 @@
-package ru.job4j.dreamjob.repository;
+package ru.job4j.dreamjob.repository.vacancy;
 
 import net.jcip.annotations.ThreadSafe;
 import org.springframework.stereotype.Repository;

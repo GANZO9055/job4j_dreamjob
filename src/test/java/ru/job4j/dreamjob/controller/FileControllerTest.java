@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import ru.job4j.dreamjob.dto.FileDto;
-import ru.job4j.dreamjob.service.FileService;
+import ru.job4j.dreamjob.service.file.FileService;
 
 import java.util.Optional;
 

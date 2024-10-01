@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.sql2o.Sql2o;
 import ru.job4j.dreamjob.configuration.DatasourceConfiguration;
 import ru.job4j.dreamjob.model.User;
+import ru.job4j.dreamjob.repository.user.Sql2oUserRepository;
 
 import java.util.Properties;
 

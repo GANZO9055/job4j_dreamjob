@@ -1,4 +1,4 @@
-package ru.job4j.dreamjob.service;
+package ru.job4j.dreamjob.service.vacancy;
 
 import ru.job4j.dreamjob.dto.FileDto;
 import ru.job4j.dreamjob.model.Vacancy;

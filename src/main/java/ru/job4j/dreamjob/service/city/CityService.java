@@ -1,4 +1,4 @@
-package ru.job4j.dreamjob.service;
+package ru.job4j.dreamjob.service.city;
 
 import ru.job4j.dreamjob.model.City;
 
