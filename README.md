@@ -19,6 +19,7 @@
 - Bootstrap
 - H2 Database
 - PostgreSQL
+- Sql2o
 
 ## Окружение:
 - Java 17
