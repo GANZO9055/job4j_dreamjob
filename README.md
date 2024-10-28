@@ -27,4 +27,4 @@
 
 ## Контакты
 
-Telegram: [Konstantin](@konstantin9055)
+Telegram: @konstantin9055
