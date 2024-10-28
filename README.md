@@ -24,3 +24,7 @@
 - Java 17
 - PostgreSQL 16
 - Maven 3.8
+
+## Контакты
+
+Telegram: [Konstantin](@konstantin9055)
