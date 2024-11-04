@@ -2,6 +2,7 @@ package ru.job4j.dreamjob.controller;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.ui.ConcurrentModel;
 import ru.job4j.dreamjob.model.User;
 import ru.job4j.dreamjob.service.user.UserService;
@@ -69,7 +70,8 @@ class UserControllerTest {
                 .thenReturn(Optional.of(user));
 
         var model = new ConcurrentModel();
-        var view = userController.loginUser(user, model);
+        var request = new MockHttpServletRequest();
+        var view = userController.loginUser(user, model, request);
 
         assertThat(view).isEqualTo("redirect:/vacancies");
     }
@@ -81,7 +83,8 @@ class UserControllerTest {
                 .thenReturn(Optional.empty());
 
         var model = new ConcurrentModel();
-        var view = userController.loginUser(user, model);
+        var request = new MockHttpServletRequest();
+        var view = userController.loginUser(user, model, request);
         var error = model.getAttribute("error");
 
         assertThat(view).isEqualTo("users/login");
